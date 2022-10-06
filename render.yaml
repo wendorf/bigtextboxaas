@@ -1,0 +1,10 @@
+services:
+- type: web
+  name: bigtextboxaas
+  env: static
+  buildCommand: "true"
+  staticPublishPath: .
+  routes:
+  - type: redirect
+    source: "*"
+    destination: https://bigtextbox.com
